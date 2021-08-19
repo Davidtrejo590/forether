@@ -40,7 +40,7 @@ class Control {
 
 
     static get_dayName = ( date ) => {
-        let week_days = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Vierenes', 'Sábado', 'Domingo'];
+        let week_days = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
         let date_now = new Date(date);
         let week_day = week_days[date_now.getDay()];
     

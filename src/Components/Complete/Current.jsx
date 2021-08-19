@@ -5,26 +5,33 @@ class Current extends Component {
 
     render() {
         return (
-            <div className="card d-flex flex-column p-2">
+            <div className="card">
                 <div className="card-body">
+
                     <div className="row">
                         <h2>Tiempo en {this.props.country}</h2>
-                        <h3>A partir de las {Control.splitDate(this.props.last_updated)}</h3>
+                        <p className="lead">A partir de las {Control.splitDate(this.props.last_updated)}</p>
                     </div>
 
-                    <div className="d-flex flew-row justify-content-between">
-                        <h1>{this.props.temp}°</h1>
-                        <img src= {this.props.url_img}  alt=""></img>
+                    <div className="row d-flex flew-row justify-content-between">
+                        <div className="col-6">
+                            <h1 className="display-3"><strong>{this.props.temp}°</strong></h1>
+                        </div>
+                        <div className="col-6 d-flex justify-content-end">
+                            <img src={this.props.url_img} alt="rounded"></img>
+                        </div>
+                        
                     </div>
 
                     <div className="d-flex flex-row justify-content-between">
-                        <p>{this.props.current}</p>
-                        <p>{this.props.min_temp}° / {this.props.max_temp}°</p>
+                        <p><strong>{this.props.current}</strong></p>
+                        <p><strong>{this.props.min_temp}° / {this.props.max_temp}°</strong> </p>
                     </div>
 
                     <div className="d-flex flex-row">
-                        <p>{this.props.avg_rain}% de Probabilidad de Lluvias</p>
+                        <h5>{this.props.avg_rain}% de Probabilidad de Lluvias</h5>
                     </div>
+
                 </div>
             </div>
         );

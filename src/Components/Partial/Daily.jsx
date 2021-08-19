@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import Control from '../../Control';
 
 let days = [];
-let url = '';
+// let url = '';
 class Days extends Component {
     render() {
 
         days = this.props.forecast;
-        url = this.props.url;
+        // url = this.props.url;
 
         return (
             <div className="card">
@@ -36,10 +36,10 @@ class Days extends Component {
                         style={{ borderRadius: '50px' }}
                         to= {{
                             pathname: '/bydays',
-                            state: { url }
+                            state: { days }
                         }}
                     >
-                        10 Days
+                        Ver más
                     </Link>
                 </div>
             </div>

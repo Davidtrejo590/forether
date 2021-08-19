@@ -2,8 +2,6 @@ import { Component } from "react";
 import DropdownMenu from '../UI/Menu';
 import { Link } from 'react-router-dom';
 
-let url = 'https://'
-
 class NavBar extends Component {
     render() {
         return (
@@ -18,12 +16,7 @@ class NavBar extends Component {
                                 <Link style={{color:'white'}} className="nav-link active" to="/byhour">ByHour</Link>
                             </li>
                             <li className="nav-item">
-                                <Link style={{color:'white'}} className="nav-link active" 
-                                to= {{
-                                    pathname: '/bydays',
-                                    state: { url }
-                                }}
-                                >10 Days</Link>
+                                <Link style={{color:'white'}} className="nav-link active" to='/bydays'>10 Days</Link>
                             </li>
                             <li className="nav-item">
                                 <Link style={{color:'white'}} className="nav-link active" to="/weekend">Weekend</Link>
