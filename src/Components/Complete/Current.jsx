@@ -14,10 +14,10 @@ class Current extends Component {
                     </div>
 
                     <div className="row d-flex flew-row justify-content-between">
-                        <div className="col-6">
+                        <div className="col-sm-6">
                             <h1 className="display-3"><strong>{this.props.temp}°</strong></h1>
                         </div>
-                        <div className="col-6 d-flex justify-content-end">
+                        <div className="col-sm-6 d-flex justify-content-end">
                             <img src={this.props.url_img} alt="rounded"></img>
                         </div>
                         

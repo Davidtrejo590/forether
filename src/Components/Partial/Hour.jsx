@@ -1,12 +1,15 @@
 import { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Control from '../../Control';
 
 
 let hours = [];
+let full_hours = [];
 class Hour extends Component {
 
     render() {
         hours = Control.forecast_by_hours(this.props.hour);
+        full_hours = this.props.hour;
         return (
             <div className="card">
                 <div className="row card-body">
@@ -28,12 +31,16 @@ class Hour extends Component {
                 </div>
 
                 <div className="card-body">
-                    <button 
-                        type="button" 
-                        className="btn btn-primary" 
+                    <Link
+                        className="btn btn-primary"
                         style={{ borderRadius: '50px' }}
-                        onClick = { event => window.location.href='byhour'}
-                    >See More</button>
+                        to= {{
+                            pathname: '/byhour',
+                            state: { full_hours }
+                        }}
+                    >
+                        Ver más
+                    </Link>
                 </div>
             </div>
         );

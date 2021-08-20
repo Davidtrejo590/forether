@@ -8,8 +8,8 @@ import Icon from '../UI/Icon';
 
 
 const styles = {
-    column: 'col-6 d-flex justify-content-center align-items-center',
-    columnCopyright: 'col-12 d-flex flex-column align-items-center',
+    column: 'col-sm-6 d-flex justify-content-center align-items-center',
+    columnCopyright: 'col-sm-12 d-flex flex-column align-items-center',
     padding: 'm-3'
 }
 

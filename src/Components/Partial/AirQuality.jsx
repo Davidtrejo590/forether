@@ -8,10 +8,10 @@ class AirQuality extends Component {
                 <div className="card-body">
                     <h5 className="card-title">Air Quality Index</h5>
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-sm-6">
                             <WbSunnyIcon></WbSunnyIcon>
                         </div>
-                        <div className="col-6">
+                        <div className="col-sm-6">
                             <p className="card-text">Air Quality</p>
                             <p className="card-text"><small className="text-muted">Description</small></p>
                         </div>

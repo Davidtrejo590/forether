@@ -7,8 +7,8 @@ import NavBar from '../Components/NavBar';
 import Search from '../UI/Search';
 
 const styles = {
-    firstRow: 'col-sm d-flex justify-content-center',
-    worldItems: 'col-sm d-flex justify-content-center align-items-center'
+    firstRow: 'col-sm-4 d-flex justify-content-center',
+    worldItems: 'col-sm-4 d-flex justify-content-center align-items-center'
 }
 
 class HeaderLayout extends Component {
@@ -29,8 +29,8 @@ class HeaderLayout extends Component {
                 </div>
 
                 <div className="d-flex" style ={{backgroundColor: ' #335f79 ', color: 'white'}}>
-                    <div className="col-4 d-flex align-self-center justify-content-center">Current Weather/Current City</div>
-                    <div className="col-8 d-flex justify-content-end"><NavBar></NavBar></div>
+                    <div className="col-sm-4 d-flex align-self-center justify-content-center">Current Weather/Current City</div>
+                    <div className="col-sm-8 d-flex justify-content-end"><NavBar></NavBar></div>
                 </div>
 
             </>

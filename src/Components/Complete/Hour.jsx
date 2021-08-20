@@ -1,10 +1,27 @@
 import { Component } from 'react';
+import DetailHour from '../../UI/DetailHour'
 
-class Weekend extends Component{
-    render(){
-        return(
+let data = [];
+
+class Weekend extends Component {
+    render() {
+        data = this.props.location.state.full_hours;
+        console.log('Data: ', data);
+        return (
             <div>
-                Hour Complete
+               {/* <DetailHour>
+                   </DetailHour>  */}
+                {
+                    data.map((hour) => {
+                        return (
+                            <DetailHour 
+                                key={hour.time}
+                                hour={hour}
+                            
+                            />
+                        )
+                    })
+                }
             </div>
         );
     }

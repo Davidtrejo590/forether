@@ -8,7 +8,6 @@ class Weekend extends Component {
 
     render() {
         data = this.props.location.state.days;
-        // console.log('Data: ', data);
         return (
             <div>
                 {

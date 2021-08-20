@@ -82,7 +82,6 @@ class Home extends Component {
                 <div className="row m-3">
                     <div className="col-7"><Daily
                         forecast={this.state.forecast}
-                        url = {url_mx}
                     ></Daily></div>
                 </div>
             </div>

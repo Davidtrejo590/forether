@@ -8,7 +8,7 @@ class City extends Component{
                 <div className="card-body">
                     <h5 className="card-title">Air Quality Index</h5>
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-sm-6">
                             <WbSunnyIcon></WbSunnyIcon>
                         </div>
                     </div>
