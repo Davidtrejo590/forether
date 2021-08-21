@@ -3,11 +3,11 @@ import { Component } from 'react';
 class Card extends Component {
     render() {
         return (
-            <div className="card" style={{ width: '18rem' }}>
+            <div className="card" style={{ width: '20rem' }}>
                 <div className="card-body ">
                     <div className="card-body" style={{ borderBottom: '1px solid' }}>
                         <div className="row">
-                            <div className="col-6 d-flex justify-content-evenly">
+                            <div className="col-sm-6 d-flex justify-content-evenly align-items-baseline">
 
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-moon-stars-fill" viewBox="0 0 16 16">
@@ -17,12 +17,12 @@ class Card extends Component {
                                 </div>
 
                                 <div className="mt-2">
-                                    <p style={{ fontSize: '12px' }}>Fase Lunar</p>
-                                    <p>{this.props.astro.moon_phase}</p>
+                                    <p className="text-muted">Fase Lunar</p>
+                                    <p><strong>{this.props.astro.moon_phase}</strong></p>
                                 </div>
                             </div>
 
-                            <div className="col-6 d-flex justify-content-evenly">
+                            <div className="col-sm-6 d-flex justify-content-evenly align-items-baseline">
 
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-stars" viewBox="0 0 16 16">
@@ -31,8 +31,8 @@ class Card extends Component {
                                 </div>
 
                                 <div className="mt-2">
-                                    <p style={{ fontSize: '12px' }}>Iluminación</p>
-                                    <p>{this.props.astro.moon_illumination}</p>
+                                    <p className="text-muted">Iluminación</p>
+                                    <p><strong>{this.props.astro.moon_illumination}</strong></p>
                                 </div>
                             </div>
 
@@ -43,7 +43,7 @@ class Card extends Component {
                 <div className="card-body">
                     <div className="card-body">
                         <div className="row">
-                            <div className="col-6 d-flex justify-content-evenly">
+                            <div className="col-sm-6 d-flex justify-content-evenly align-items-baseline">
 
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-moon" viewBox="0 0 16 16">
@@ -52,12 +52,12 @@ class Card extends Component {
                                 </div>
 
                                 <div className="mt-2">
-                                    <p style={{ fontSize: '12px' }}>Salida de Luna</p>
-                                    <p>{this.props.astro.moonrise}</p>
+                                    <p className="text-muted">Anochecer</p>
+                                    <p><strong>{this.props.astro.moonrise}</strong></p>
                                 </div>
                             </div>
 
-                            <div className="col-6 d-flex justify-content-evenly">
+                            <div className="col-sm-6 d-flex justify-content-evenly align-items-baseline">
 
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-moon-fill" viewBox="0 0 16 16">
@@ -66,8 +66,8 @@ class Card extends Component {
                                 </div>
 
                                 <div className="mt-2">
-                                    <p style={{ fontSize: '12px' }}>Puesta de Luna</p>
-                                    <p>{this.props.astro.moonset}</p>
+                                    <p className="text-muted">Amanecer</p>
+                                    <p><strong>{this.props.astro.moonset}</strong></p>
                                 </div>
                             </div>
 

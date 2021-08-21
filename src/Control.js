@@ -52,6 +52,22 @@ class Control {
         }
     }
 
+    static splitTime = ( time ) => {
+        let items = time.split(':');
+        return items[0];
+    }
+
+    static time_24to12 = ( time ) => {
+        let hours = this.splitTime(time);
+        let AMorPM = hours >= 12 ? 'PM' : 'AM';
+        hours = (hours % 12) || 12;
+    
+        let time_12 = `${hours}:00 ${AMorPM}`;
+
+        return time_12;
+    }
+    
+
 }
 export default Control;
 

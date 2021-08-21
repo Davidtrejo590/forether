@@ -3,11 +3,11 @@ import { Component } from 'react';
 class Card extends Component {
   render() {
     return (
-      <div className="card" style={{ width: '18rem' }}>
+      <div className="card" style={{ width: '20rem' }}>
         <div className="card-body ">
           <div className="card-body" style={{ borderBottom: '1px solid' }}>
             <div className="row">
-              <div className="col-6 d-flex justify-content-evenly">
+              <div className="col-sm-6 d-flex justify-content-evenly align-items-baseline">
 
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-droplet-half" viewBox="0 0 16 16">
@@ -17,12 +17,12 @@ class Card extends Component {
                 </div>
 
                 <div className="mt-2">
-                  <p style={{ fontSize: '12px' }}>Humedad</p>
-                  <p>{this.props.day.avghumidity}%</p>
+                  <p className="text-muted">Humedad</p>
+                  <p><strong>{this.props.day.avghumidity}%</strong></p>
                 </div>
               </div>
 
-              <div className="col-6 d-flex justify-content-evenly">
+              <div className="col-sm-6 d-flex justify-content-evenly align-items-baseline">
 
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-sun" viewBox="0 0 16 16">
@@ -31,8 +31,8 @@ class Card extends Component {
                 </div>
 
                 <div className="mt-2">
-                  <p style={{ fontSize: '12px' }}>Índice UV</p>
-                  <p>{this.props.day.uv}</p>
+                  <p className="text-muted">Índice UV</p>
+                  <p><strong>{this.props.day.uv}</strong></p>
                 </div>
               </div>
 
@@ -43,7 +43,7 @@ class Card extends Component {
         <div className="card-body">
           <div className="card-body">
             <div className="row">
-              <div className="col-6 d-flex justify-content-evenly">
+              <div className="col-sm-6 d-flex justify-content-evenly align-items-baseline">
 
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-sunset" viewBox="0 0 16 16">
@@ -52,12 +52,12 @@ class Card extends Component {
                 </div>
 
                 <div className="mt-2">
-                  <p style={{ fontSize: '12px' }}>Amanecer</p>
-                  <p>{this.props.astro.sunrise}</p>
+                  <p className="text-muted">Amanecer</p>
+                  <p><strong>{this.props.astro.sunrise}</strong></p>
                 </div>
               </div>
 
-              <div className="col-6 d-flex justify-content-evenly">
+              <div className="col-sm-6 d-flex justify-content-evenly align-items-baseline">
 
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-sunset-fill" viewBox="0 0 16 16">
@@ -66,8 +66,8 @@ class Card extends Component {
                 </div>
 
                 <div className="mt-2">
-                  <p style={{ fontSize: '12px' }}>Puesta de Sol</p>
-                  <p>{this.props.astro.sunset}</p>
+                  <p className="text-muted">Atardecer</p>
+                  <p><strong>{this.props.astro.sunset}</strong></p>
                 </div>
               </div>
 
