@@ -12,24 +12,27 @@ const styles = {
 }
 
 class HeaderLayout extends Component {
+
     render() {
         return (
             <>
-                <div style={{backgroundColor: ' #003758 ', color:'white'}} className="d-flex align-items-baseline">
+                <div style={{ backgroundColor: ' #003758 ', color: 'white' }} className="d-flex align-items-baseline">
                     <div className={styles.firstRow}>Forether</div>
                     <div className={styles.firstRow}><Search></Search></div>
                     <div className={styles.worldItems}>
-                        <IconButton><PublicIcon style={{color:'white'}} /></IconButton>
+                        <IconButton><PublicIcon style={{ color: 'white' }} /></IconButton>
                         MX
                         |
                         <sup> °</sup>C
-                        <Divider  orientation="vertical" style={{color: 'black'}}/>
-                        <IconButton><ExpandMoreIcon style={{color:'white'}}/></IconButton>
+                        <Divider orientation="vertical" style={{ color: 'black' }} />
+                        <IconButton><ExpandMoreIcon style={{ color: 'white' }} /></IconButton>
                     </div>
                 </div>
 
-                <div className="d-flex" style ={{backgroundColor: ' #335f79 ', color: 'white'}}>
-                    <div className="col-sm-4 d-flex align-self-center justify-content-center">Current Weather/Current City</div>
+                <div className="d-flex" style={{ backgroundColor: ' #335f79 ', color: 'white' }}>
+                    <div className="col-sm-4 d-flex align-self-center justify-content-center">
+                        { this.props.data.location ? <h6>{`${this.props.data?.location.name} / ${this.props.data?.current.temp_c}°`}</h6> : <p></p> }
+                    </div>
                     <div className="col-sm-8 d-flex justify-content-end"><NavBar></NavBar></div>
                 </div>
 

@@ -5,19 +5,16 @@ let data = [];
 
 class Weekend extends Component {
     render() {
-        data = this.props.location.state.full_hours;
-        console.log('Data: ', data);
+        this.props.data ? data = this.props.data.forecast.forecastday[0] : data = this.props.location.state.full_hours
+        // data = this.props.location.state.full_hours;
         return (
-            <div>
-               {/* <DetailHour>
-                   </DetailHour>  */}
+            <div className="card-body text-center">
                 {
-                    data.map((hour) => {
+                    data.hour.map((hour) => {
                         return (
                             <DetailHour 
                                 key={hour.time}
                                 hour={hour}
-                            
                             />
                         )
                     })

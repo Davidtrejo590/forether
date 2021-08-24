@@ -16,10 +16,10 @@ class NavBar extends Component {
                                 <Link style={{color:'white'}} className="nav-link active" to="/airCondition">Air Condition</Link>
                             </li>
                             <li className="nav-item">
-                                <Link style={{color:'white'}} className="nav-link active" to='/airCondition'>10 Days</Link>
+                                <Link style={{color:'white'}} className="nav-link active" to='/byhour'>Hours</Link>
                             </li>
                             <li className="nav-item">
-                                <Link style={{color:'white'}} className="nav-link active" to="/weekend">Weekend</Link>
+                                <Link style={{color:'white'}} className="nav-link active" to="/bydays">Days</Link>
                             </li>
                             <li className="nav-item">
                                 <Link style={{color:'white'}} className="nav-link active" to="/bymonth">Month</Link>

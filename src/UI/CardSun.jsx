@@ -4,7 +4,7 @@ class Card extends Component {
   render() {
     return (
       <div className="card" style={{ width: '20rem' }}>
-        <div className="card-body ">
+        <div className="card-body text-center">
           <div className="card-body" style={{ borderBottom: '1px solid' }}>
             <div className="row">
               <div className="col-sm-6 d-flex justify-content-evenly align-items-baseline">
@@ -16,7 +16,7 @@ class Card extends Component {
                   </svg>
                 </div>
 
-                <div className="mt-2">
+                <div>
                   <p className="text-muted">Humedad</p>
                   <p><strong>{this.props.day.avghumidity}%</strong></p>
                 </div>
@@ -30,7 +30,7 @@ class Card extends Component {
                   </svg>
                 </div>
 
-                <div className="mt-2">
+                <div>
                   <p className="text-muted">Índice UV</p>
                   <p><strong>{this.props.day.uv}</strong></p>
                 </div>
@@ -51,7 +51,7 @@ class Card extends Component {
                   </svg>
                 </div>
 
-                <div className="mt-2">
+                <div>
                   <p className="text-muted">Amanecer</p>
                   <p><strong>{this.props.astro.sunrise}</strong></p>
                 </div>
@@ -65,7 +65,7 @@ class Card extends Component {
                   </svg>
                 </div>
 
-                <div className="mt-2">
+                <div>
                   <p className="text-muted">Atardecer</p>
                   <p><strong>{this.props.astro.sunset}</strong></p>
                 </div>

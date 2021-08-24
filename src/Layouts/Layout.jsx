@@ -7,10 +7,10 @@ class Layout extends Component {
         return (
             <div className="container-fluid">
                 <div className="row">
-                    <HeaderLayout></HeaderLayout>
+                    <HeaderLayout data={this.props.data}></HeaderLayout>
                 </div>
             
-                <div className="row p-5" style={{backgroundColor: ' #abebc6 '}}>
+                <div className="row" style={{backgroundColor: ' #abebc6 '}}>
                     {this.props.children}
                 </div>
 
