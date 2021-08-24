@@ -38,7 +38,6 @@ class Home extends Component {
     }
 
     render() {
-        // console.log(this.props.data)
         return (
             <div className="container p-5">
 

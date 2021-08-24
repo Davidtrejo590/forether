@@ -7,9 +7,10 @@ let data = []
 class Weekend extends Component {
 
     render() {
-        data = this.props.location.state.days;
+        this.props.data ? data = this.props.data.forecast.forecastday : data = this.props.location.state.days;
+        // data = this.props.location.state.days;
         return (
-            <div>
+            <div className="card-body">
                 {
                     data.map( (day) => {
                         return(

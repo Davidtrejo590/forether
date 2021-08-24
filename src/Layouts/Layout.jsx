@@ -10,7 +10,7 @@ class Layout extends Component {
                     <HeaderLayout data={this.props.data}></HeaderLayout>
                 </div>
             
-                <div className="row" style={{backgroundColor: ' #abebc6 '}}>
+                <div className="row p-5" style={{backgroundColor: ' #abebc6 '}}>
                     {this.props.children}
                 </div>
 
