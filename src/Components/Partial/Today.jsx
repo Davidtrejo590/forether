@@ -4,7 +4,6 @@ class Today extends Component {
     render() {
         return (
             this.props.data.location && this.props.data.current && this.props.data.forecast ?
-
                 <div className="card">
                     <div className="card-body">
                         <div className="row">
@@ -100,9 +99,7 @@ class Today extends Component {
                         </div>
                     </div>
                 </div>
-
                 :
-
                 <div></div>
         );
     }

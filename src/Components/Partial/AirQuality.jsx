@@ -13,7 +13,6 @@ const air_index = [
 
 class AirQuality extends Component {
     render() {
-        console.log(this.props.data.current);
         return (
             this.props.data.current ?
                 <div className="container">

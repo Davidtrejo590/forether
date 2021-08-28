@@ -8,9 +8,8 @@ let full_hours = [];
 class Hour extends Component {
 
     render() {
-        // console.log(this.props.data.forecast.forecastday[0].hour)
         this.props.data.forecast ? hours = Control.forecast_by_hours(this.props.data.forecast.forecastday[0].hour) : hours = [];
-        this.props.data.forecast ? full_hours = this.props.data.forecast.forecastday[0]: full_hours = [];
+        this.props.data.forecast ? full_hours = this.props.data.forecast.forecastday[0] : full_hours = [];
         return (
             <div className="card">
                 <div className="card-body">

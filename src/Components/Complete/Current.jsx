@@ -41,8 +41,6 @@ class Current extends Component {
                 </div>
                 :
                 <div></div>
-
-
         );
     }
 }

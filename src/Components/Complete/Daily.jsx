@@ -8,13 +8,12 @@ class Weekend extends Component {
 
     render() {
         this.props.data ? data = this.props.data.forecast.forecastday : data = this.props.location.state.days;
-        // data = this.props.location.state.days;
         return (
             <div className="card-body">
                 {
-                    data.map( (day) => {
-                        return(
-                            <Detail 
+                    data.map((day) => {
+                        return (
+                            <Detail
                                 key={day.date}
                                 date={Control.get_dayName(day.date)}
                                 max={day.day.maxtemp_c}
@@ -27,9 +26,9 @@ class Weekend extends Component {
                                 astro={day.astro}
                             />
                         )
-                    }) 
+                    })
                 }
-                
+
             </div>
         );
     }

@@ -4,8 +4,6 @@ import Layout from './Layouts/Layout';
 import { Route, Switch } from 'react-router-dom';
 import Hour from './Components/Complete/Hour';
 import Daily from './Components/Complete/Daily';
-import Weekend from './Components/Complete/Weekend';
-import Month from './Components/Complete/Month';
 import Home from './Components/Home/Home';
 import AirQuality from './Components/Partial/AirQuality';
 import axios from 'axios';
@@ -34,7 +32,6 @@ class App extends Component {
           forecast: response.data.forecast.forecastday,
           error: null
         });
-        console.log(this.state.data)
       })
       .catch(error => {
         this.setState({ current: null, location: null, hour: null, forecast: null, data: null, error: error });
@@ -47,17 +44,12 @@ class App extends Component {
 
 
   render() {
-
-
-
     let routes = (
       <Switch>
         <Route path='/' exact component={Home}></Route>
         <Route path='/today' exact component={Home}></Route>
         <Route path='/byhour' render={() => <Hour data={this.state.data}></Hour>}></Route>
         <Route path='/bydays' render={() => <Daily data={this.state.data}></Daily>}></Route>
-        <Route path='/weekend' exact component={Weekend}></Route>
-        <Route path='/byMonth' exact component={Month}></Route>
         <Route path="/airCondition" render={() => <AirQuality data={this.state.data}></AirQuality>}></Route>
       </Switch>
     );

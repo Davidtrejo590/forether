@@ -38,7 +38,7 @@ const DropDownMenu = () => {
 
   return (
     <div>
-      <IconButton style={{color:'white'}} onClick={handleClick}><ExpandMoreIcon></ExpandMoreIcon></IconButton>
+      <IconButton style={{ color: 'white' }} onClick={handleClick}><ExpandMoreIcon></ExpandMoreIcon></IconButton>
       <StyledMenu
         id="customized-menu"
         anchorEl={anchorEl}

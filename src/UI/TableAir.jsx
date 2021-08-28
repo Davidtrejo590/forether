@@ -2,12 +2,11 @@ import { Component } from 'react';
 
 class TableAir extends Component {
   render() {
-    this.props.data ? console.log(this.props.data.current) : console.log()
     return (
       this.props.data ?
         <div className="table-responsive">
-          <table class="table table-striped table-hover table-bordered ">
-            <thead class="table-dark text-center">
+          <table className="table table-striped table-hover table-bordered ">
+            <thead className="table-dark text-center">
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Nombre</th>
@@ -17,9 +16,8 @@ class TableAir extends Component {
             <tbody className="text-center">
               {
                 Object.entries(this.props.data.air_quality).map((data, index) => {
-                  console.log(Object.entries(this.props.data.air_quality))
                   return (
-                    <tr>
+                    <tr key={index}>
                       <td>
                         <p className="lead">{index + 1}</p>
                       </td>
@@ -38,9 +36,7 @@ class TableAir extends Component {
           </table>
         </div>
         :
-        <div>
-
-        </div>
+        <div></div>
     );
   }
 }
